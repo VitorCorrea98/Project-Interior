@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #181719;
+}
+
+body{
+    padding: 2% 4%;
+    height: 92vh;
+    color: #FFFFFF;
+}
+
+/* GENREAL TEXT STYLES */
+
+
+#Lora{
+    font-family: "Lora", serif;
+}
+
+#Mont{
+    font-family: "Montserrat", serif;
+}
+
+#Crimson{
+    font-family:"Crimson Pro",serif;
+}
+
+/**GENREAL TEXT STYLES**/
+/**********END**********/
+
+
+/*******HEADER********/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header .logo{
+    text-decoration: none;
+    padding: 6px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 100px
+
+}
+
+nav > a:nth-child(1){
+    font-weight: 700;
+    text-decoration: solid;
+    text-decoration: #FFFFFF;
+}
+
+/*******HEADER********/
+/*********END*********/
+
+
+/********MAIN*******/
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    
+}
+
+main .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-bottom: 100px;
+}
+
+.lfet-side h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 29px;
+      
+}
+
+.left-side p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 44px 0;
+
+}
+
+.left-side a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: auto;
+
+}
+
+/* RIGHT SIDE  */
+
+main img{
+    width: 760px;
+    height: 560px;
+}
+
+.card-top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right-side .card-top{
+    display: flex;
+    padding: 20px;
+}
+
+.card-top .card-name{
+    padding-left: 20px;
+}
+
+.card-name p{
+    padding-top: 8px;
+    color: #A9A9A9;
+}
+
+
+.card{
+    background-color: rgb(33, 33, 65);
+    width: 400px;
+    position: relative;
+    bottom: 86px;
+    left: 320px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    ;
+}
+
+.card h2{
+    padding: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+/********MAIN*******/
+/********END********/
+
+
+
+/******FOOTER******/
+footer{
+      display: flex;
+      justify-content: center;    
+      color: #A9A9A9;
+}
+
+footer a{
+    text-decoration: none;
+    color:blanchedalmond
+    
+}
+
+
+
+/******FOOTER******/
+/*******END********/
+
+
+/* MEDIA QUERY */
