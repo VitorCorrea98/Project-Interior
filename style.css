@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #181719;
 }
 
 body{
-    padding: 2% 4%;
+    padding: 20px 40px;
     height: 92vh;
     color: #FFFFFF;
+    background-color: #181719;
 }
 
 /* GENREAL TEXT STYLES */
@@ -35,6 +35,7 @@ header{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    
 }
 
 header .logo{
@@ -58,6 +59,19 @@ nav > a:nth-child(1){
     text-decoration: solid;
     text-decoration: #FFFFFF;
 }
+
+.menu-btn{
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+
+
 
 /*******HEADER********/
 /*********END*********/
@@ -133,7 +147,7 @@ main img{
 
 
 .card{
-    background-color: rgb(33, 33, 65);
+    background-color: #181719;
     width: 400px;
     position: relative;
     bottom: 86px;
@@ -176,3 +190,74 @@ footer a{
 
 
 /* MEDIA QUERY */
+
+@media(max-width: 1000px ){
+    
+    /*******HEADER********/
+    nav{
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        background-color: #181719;
+        padding: 20px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        
+    }
+
+    #click:checked ~ nav{
+        left: 0%;
+    }
+     
+    nav a{
+        margin-top: 90px;
+        margin-left: 0;
+    }
+
+    .menu-btn{
+        z-index: 2;
+        position: fixed;
+        right:40px;
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+
+
+    /*******HEADER********/
+    /*********END*********/
+
+
+
+    /********MAIN*******/
+
+
+    .main-pic{
+        width: 600px;
+    }
+
+    .card{
+        position: relative;
+        left: 100px;
+        width: 420px;
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /********MAIN*******/
+    /********END********/
+}
+
